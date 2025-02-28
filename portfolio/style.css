@@ -1,0 +1,149 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a0a1e, #2e003e, #3d003f, #4a003d);
+    color: #ffffff;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: background 0.5s, color 0.5s;
+}
+
+/* Light Theme */
+body.light-theme {
+    background: #f5f5f5;
+    color: #000;
+}
+
+/* Full-Page Container */
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Social Icons */
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* GitHub Icon */
+.social-icons a:nth-child(1) {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/733/733609.png'); 
+}
+
+/* Gmail Icon */
+.social-icons a:nth-child(2) {
+    background-image: url('https://cdn-icons-png.flaticon.com/512/732/732200.png');
+}
+
+/* Toggle Theme Button */
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    background: #FFD700;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+#theme-toggle:hover {
+    background: #ffcc00;
+}
+/* Welcome Section */
+.intro-section {
+    width: 50%;
+    text-align: left;
+    position: absolute;
+    left: 10%; /* Positioned further left */
+    top: 50%; /* Adjusted to bring "Welcome" higher */
+    transform: translateY(-50%);
+}
+/* Glow Effect */
+.glow-effect {
+    box-shadow: 0px 0px 20px yellow;
+}
+
+h1 {
+    font-size: 70px;
+    margin: 0;
+    padding-bottom: 20px; /* Added space below "Welcome" */
+}
+
+.intro {
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 600px;
+}
+
+/* Projects Section (Right Side) */
+.projects {
+    width: 30%;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
+}
+
+.projects h2 {
+    font-size: 28px;
+    border-bottom: 3px solid #FFD700;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Project Links */
+.projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.projects ul li {
+    margin-top: 15px;
+}
+
+.projects ul li a {
+    color: #FFD700;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.projects ul li a:hover {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    font-size: 16px;
+    text-align: right;
+    opacity: 0.7;
+}
